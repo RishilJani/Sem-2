@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class Addition{
+public class J0401Addition{
     public static void main(String[] args){
         double a = Double.parseDouble(args[0]);
         double b = Double.parseDouble(args[1]);

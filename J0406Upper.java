@@ -1,4 +1,4 @@
-public class J0406 {
+public class J0406Upper {
     public static void main(String[] args) {
         String str = args[0];
         int s = str.charAt(0); 

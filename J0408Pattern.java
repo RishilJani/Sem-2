@@ -1,4 +1,4 @@
-public class J0408 {
+public class J0408Pattern {
     public static void main(String[] args) {
         
         for (int i = 0; i < 6; i++) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Calculator {
+public class J0203Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
                 
@@ -25,9 +25,6 @@ public class Calculator {
         }
         else if(op == '/'){
             System.out.println("Division = "+(a/b));
-        }
-        else if(op == '%'){
-            System.out.println("Modulus = "+(a%b));
         }
         sc.close();
     }

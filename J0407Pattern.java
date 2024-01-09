@@ -1,5 +1,5 @@
 
-public class Pattern {
+public class J0407Pattern {
     public static void main(String[] args) {
         String str = "stream";
         int i,j;

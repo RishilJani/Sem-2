@@ -25,21 +25,15 @@ public class J0302Palindrome {
             else{
                 System.out.print("Enter a String:");
                 String str = sc.next();
-                boolean flag = true;
             
                 for (int i = 0; i < str.length()/2; i++) {
                    if(str.charAt(i) != str.charAt(str.length()-1-i)) {
-                        flag = false;
-                        break;
+                        System.out.println("not palindrome");
+                        return;
                     }
                 }
+                System.out.println("palindrome");
                 
-                if(flag){
-                    System.out.println("palindrome");
-                }
-                else{
-                    System.out.println("not palindrome");
-                }
             }
         sc.close();
     }

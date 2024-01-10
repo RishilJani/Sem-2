@@ -1,3 +1,4 @@
+// Extra Parttern 
 public class Array {
     public static void main(String[] args) {
         int i, j, n =10, a =0 ;

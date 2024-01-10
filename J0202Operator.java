@@ -1,4 +1,4 @@
-public class Operator{
+public class J0202Operator{
     public static void main(String[] args) {
         int a = 10 + 20*30;
         System.out.println("i. a = " + a);

@@ -8,7 +8,7 @@ The student gets a division as per the following rules:
 
 import java.util.Scanner;
 
-public class Student {
+public class J0301Student {
     public static void main(String[] args) {
         int[] marks = new int[5];
         int i =-1;

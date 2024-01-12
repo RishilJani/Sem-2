@@ -3,7 +3,7 @@ class Circle {
     float radius ;
     
     void areaOfCircle(){
-        double area = (3.14)*(3.14)*radius;
+        double area = (3.14)*radius*radius;
         System.out.println("area = "+ area);
     }
 }

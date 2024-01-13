@@ -24,6 +24,10 @@ public class J0203Calculator {
             System.out.println("Multiply = "+(a*b));
         }
         else if(op == '/'){
+            while (b==0) {
+                System.out.println("Enter valid b: ");
+                b = sc.nextFloat();
+            }
             System.out.println("Division = "+(a/b));
         }
         sc.close();

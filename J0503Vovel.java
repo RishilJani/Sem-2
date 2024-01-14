@@ -2,23 +2,24 @@ import java.util.Scanner;
 class Vovel{
     int vov;
     public void count(String str){
-        int i= 0;
-        while(i<str.length()){
-            if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) =='u' || str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) == 'I' || str.charAt(i) == 'O' || str.charAt(i) =='U' ){
-               this.vov++;
+        int i=0,vov=0;
+        int subindex = str.indexOf("quit");
+
+        if(subindex != -1){
+            while(i<subindex){
+                if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) =='u' || str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) == 'I' || str.charAt(i) == 'O' || str.charAt(i) =='U' ){
+                   vov++;
+                }
+                i++;
             }
-            
-            if(str.charAt(i) == 'q' && str.charAt(i+1) == 'u' && str.charAt(i+2) == 'i' && str.charAt(i+3) == 't'){
-                this.vov += 2;
-                System.out.println(vov);
-                
-                return;
-            }
-            i++;
+            vov +=2;
+            System.out.println("no of vovels = "+vov);
         }
-        System.out.println("\"quit\" required");
+        else{
+            System.out.println("\"quit\" required");
+        }
+        
     }
-    
     
 }
 public class J0503Vovel{
@@ -29,6 +30,6 @@ public class J0503Vovel{
         
         Vovel v = new Vovel();
         v.count(str);
-        
+        sc.close();
     }
 }

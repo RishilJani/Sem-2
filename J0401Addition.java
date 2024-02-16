@@ -18,9 +18,3 @@ public class J0401Addition{
 
     }
 }
-/*
- 10
- 8 9
- 7 6 5
- 1 2 3 4
- */

@@ -30,6 +30,11 @@ class Book_Publication extends Book {
         this.title = str;
     }
 
+    void setter(String str1, String str2) {
+        super.setter(str1);
+        this.title = str2;
+    }
+
     String getter() {
         return title;
     }
@@ -52,6 +57,11 @@ class Paper_Publication extends Book {
         return title;
     }
 
+    void setter(String str1, String str2) {
+        super.setter(str1);
+        this.title = str2;
+    }
+
     @Override
     public void display() {
         super.display();
@@ -67,22 +77,23 @@ public class J0602Book {
         System.out.println("Enter Author's name: ");
         b.setter(sc.nextLine());
 
+        // Book b1 = null;
         System.out.println("Enter publication: ");
 
         if ("book".equals(sc.nextLine())) {
+
             Book_Publication b1 = new Book_Publication();
-
             System.out.println("Enter Book's title: ");
-            b1.setter(sc.nextLine());
-
+            b1.setter(b.getter(), sc.nextLine());
             b1.display();
+
         } else if ("paper".equals(sc.nextLine())) {
-            Paper_Publication p1 = new Paper_Publication();
+            Paper_Publication b1 = new Paper_Publication();
 
             System.out.println("Enter Paper's title: ");
-            p1.setter(sc.nextLine());
+            b1.setter(b.getter(), sc.nextLine());
 
-            p1.display();
+            b1.display();
         }
 
         sc.close();

@@ -1,7 +1,7 @@
 class MyThread1 implements Runnable{
-    @Override
+    
     public void run() {
-        int i = 0;
+    	int i = 0;
         while (i<20) {
             System.out.println("Good Morning");
             try {
@@ -14,7 +14,7 @@ class MyThread1 implements Runnable{
     }
 }
 class MyThread2 implements Runnable{
-    @Override
+    
     public void run() {
         int i = 0;
         while (i<10) {
@@ -31,10 +31,8 @@ class MyThread2 implements Runnable{
 public class J0901 {
 
     public static void main(String[] args) {
-        Runnable t1 = new MyThread1();
-        Runnable t2 = new MyThread2();
-        Thread t3 = new Thread(t1);
-        Thread t4 = new Thread(t2);
+        Thread t3 = new Thread(new MyThread1());
+        Thread t4 = new Thread(new MyThread2());
 
         t3.start();
         t4.start();
